@@ -1,6 +1,7 @@
 const Apify = require('apify');
 const {log, sleep} = Apify.utils;
 const {RetireError} = require('./init');
+const {uuid} = require('uuid').v4;
 const {
     isEnoughItemsCollected,
     processZpid,
